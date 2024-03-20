@@ -1,0 +1,80 @@
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: blue;
+                padding: 20px;
+                text-align: left;
+                font-size: 20px;
+                font-family: arial;
+                color: white;
+            }
+            header p{
+                font-size: 50px; /* Ukuran font lebih besar */
+                color: yellow; /* Warna kuning */
+                margin-bottom: 0; /* Menghapus jarak ke bawah */
+                margin-top: 0;
+            }
+            header p.tu {
+                color: white; /* Warna putih */
+            }
+            nav {
+                float: left;
+                width: 20%;
+                height: 350px; 
+                background: white;
+                border-style: dashed;
+                border-color: grey;
+                padding: 20px;
+                margin-top: 3px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            a:hover {
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: underline overline;
+                color: #000000;
+            }
+            article {
+                flex: 1; /* Menyesuaikan lebar dengan isi konten */
+                padding: 20px;
+                display: flex; /* Menggunakan flexbox */
+                justify-content: center; /* Mengatur konten di tengah secara horizontal */
+                align-items: center; /* Mengatur konten di tengah secara vertikal */
+            }
+            .logo {
+                text-align: center;
+            }
+            .text p.red {
+                color: red;
+            }
+            
+            section::after {
+                content: "";
+                display: table;
+                clear:both;
+            }
+            footer {
+                background-color: rgb(106, 151, 196);
+                padding: 10px;
+                text-align: right;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            img {
+                margin-bottom: 0px;
+            }
+            h2 {
+                margin-top: 0px;
+            }

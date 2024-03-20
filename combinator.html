@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Combinator Selector</title>
+        <link rel="icon" type="icon/png" href="gambar/icon.png" sizes="16x16" />
+
+        <style>
+            div p { /* no 1 */
+                color: red;
+            }
+            div > p { /* no 2 */
+                background-color: yellow;
+            }
+            div + p { /* no 3 */
+                background-color: darkgray;
+            }
+            div ~ p { /* no 4 */
+                color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>This is a paragraph. Mengubah warna teks semua paragraf yang berada dalam elemen menjadi merah.</p>
+            <p>This is a paragraph. Memberi latar belakang warna kuning pada paragraf yang langsung berada di bawah elemen </p>
+        </div>
+        <p>This is a paragraph.  Memberi latar belakang warna abu-abu gelap pada paragraf pertama yang berada setelah elemen <div></p>
+        <p>This is a paragraph. Mengubah warna teks semua paragraf yang berada setelah elemen menjadi cyan.</p>
+    </body>
+</html>
